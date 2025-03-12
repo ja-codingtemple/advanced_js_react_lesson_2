@@ -8,7 +8,7 @@ A subclass is a class that inherits the properties and methods of another class,
 WHAT IS INHERITANCE?
 Inheritance is the concept of allowing one class to inherit the properties and methods of another.
 
-CREATING A SUBCLASS / UTILIZATING INHERITANCE:
+CREATING A SUBCLASS / UTILIZING INHERITANCE:
 To create a subclass, we must use the 'extends' keyword.
 
 WHAT IS SUPER()?
