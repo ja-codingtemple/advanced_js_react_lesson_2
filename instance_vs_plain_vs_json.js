@@ -79,3 +79,20 @@ console.log(Object.entries(dog)); // Print the object's key-value pairs together
 console.log(dog.name);
 // Call the eat() function. (This is stored as a property.)
 dog.eat("chicken");
+
+/*
+=========================================
+JSON (EXAMPLE)
+=========================================
+*/
+console.log("\nJSON (JavaScript Object Notation) EXAMPLE:")
+
+// Create a plain JavaScript object.
+let customer = {
+    "name": "Marcus Aurelius LXXV",
+    "age": "30"
+};
+
+let customerJSON = JSON.stringify(customer);
+
+console.log(customerJSON);
