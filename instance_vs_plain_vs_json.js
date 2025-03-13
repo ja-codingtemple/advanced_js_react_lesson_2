@@ -50,7 +50,7 @@ class Dog {
 }
 
 // Create the instance object.
-perfect_puppy = new Dog("Opal", "Teacup Schnauzer", "Black");
+const perfect_puppy = new Dog("Opal", "Teacup Schnauzer", "Black");
 
 // Call some of the instance object's methods.
 perfect_puppy.walk("Dog Park");
@@ -88,11 +88,13 @@ JSON (EXAMPLE)
 console.log("\nJSON (JavaScript Object Notation) EXAMPLE:")
 
 // Create a plain JavaScript object.
-let customer = {
+const customer = {
     "name": "Marcus Aurelius LXXV",
     "age": "30"
 };
 
-let customerJSON = JSON.stringify(customer);
+// Convert the object to a JSON string.
+const customerJSON = JSON.stringify(customer);
 
+// Print out the JSON string.
 console.log(customerJSON);

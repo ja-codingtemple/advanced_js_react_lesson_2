@@ -25,8 +25,8 @@ class Character {
     constructor(name, level, health, power) {
         this.name = name; // Set the object's name equal to the one provided via parameters.
         this.level = level; // Set the object's level equal to the one provided via parameters.
-        this.health = this.health; // Set the object's health equal to the one provided via parameters.
-        this.power = this.power; // Set the object's power equal to the one provided via parameters.
+        this.health = health; // Set the object's health equal to the one provided via parameters.
+        this.power = power; // Set the object's power equal to the one provided via parameters.
         this.location = "Home" // Set the object's default location to Home.
         console.log(`${this.name} has been created.`);
     }
@@ -50,7 +50,7 @@ power: 100
 */
 const character1 = new Character("John", 1, 100, 100);
 
-// Call the teleport() method to make character1 travel.
+// Call the teleport() method to make character1 teleport.
 character1.teleport("Dragon's Lair");
 
 // Display character1's current location.

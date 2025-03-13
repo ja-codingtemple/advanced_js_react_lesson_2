@@ -34,11 +34,11 @@ class Character {
     }
 }
 
-// Define the subclass 'Peasant' (extend the parent/superclass)
+// Define the subclass 'Beggar' (extend the parent/superclass)
 class Beggar extends Character {
-    // Require the provision of a value for the 'name' property to create a Fighter.
+    // Require the provision of a value for the 'name' property to create a Beggar.
     constructor(name) {
-        // Pass default stats to the parent/subclass. Set the level of all peasants to 1, health to 10, and power to 0.
+        // Pass default stats to the parent/subclass. Set the level of all beggars to 1, health to 10, and power to 0.
         super(name, 1, 10, 0);
     }
 
@@ -49,22 +49,22 @@ class Beggar extends Character {
 
 // Define the subclass 'Enforcer' (extend the parent/superclass)
 class Enforcer extends Character {
-    // Require the provision of values for the 'name' and 'level' properties to create a Fighter. 
+    // Require the provision of values for the 'name' and 'level' properties to create an Enforcer. 
     constructor(name, level) {
         // Pass values to the constructor of the parent / super class.
         // NOTE: We are hardcoding the values for health & power to ensure all Fighters have a specific base health & power amount.
         super(name, level, 150, 200); 
     }
 
-    imprison(opponent) {
-        opponent.location = "Prison";
-        console.log(`${this.name} has imprisoned ${opponent.name}.`);
-        console.log(`${opponent.name}'s current location: ${opponent.location}.`);
+    imprison(target) {
+        target.location = "Prison";
+        console.log(`${this.name} has imprisoned ${target.name}.`);
+        console.log(`${target.name}'s current location: ${target.location}.`);
     }
 }
 
-// Create a Beggar named "Joe" who is level 1 with 50 health and 0 power.
-beggar = new Beggar("Joe", 1, 50, 0);
+// Create a Beggar named "Joe".
+beggar = new Beggar("Joe");
 
 // Create an Enforcer named "Pavel" who is level 60. We are not defining health & power because those values are set by default in the subclass.
 enforcer = new Enforcer("Pavel", 60);
