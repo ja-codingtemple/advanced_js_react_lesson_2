@@ -52,7 +52,7 @@ class Enforcer extends Character {
     // Require the provision of values for the 'name' and 'level' properties to create an Enforcer. 
     constructor(name, level) {
         // Pass values to the constructor of the parent / super class.
-        // NOTE: We are hardcoding the values for health & power to ensure all Fighters have a specific base health & power amount.
+        // NOTE: We are hardcoding the values for health & power to ensure all Enforcers have a specific base health & power amount.
         super(name, level, 150, 200); 
     }
 
